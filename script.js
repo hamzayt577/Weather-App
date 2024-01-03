@@ -5,6 +5,13 @@ const temperature_el = document.getElementById("temperature");
 const conditions_el = document.getElementById("conditions");
 const visibility_el = document.getElementById("visibility");
 
+const read_more_btn_el = document.getElementById("read-more-btn");
+const read_more_container = document.getElementById("read-more-container");
+const highest_temp_el = document.getElementById("highest-temp");
+const lowest_temp_el = document.getElementById("lowest-temp");
+const wind_speed_direction_el = document.getElementById("wind-speed-direction");
+const precipitation_el = document.getElementById("precipitation");
+
 let lat;
 let lng;
 
@@ -34,3 +41,7 @@ navigator.geolocation.getCurrentPosition((position) => {
 
   fetchWeather(lat, lng);
 });
+
+function read_more() {}
+
+read_more_btn_el.addEventListener("click", read_more);

@@ -39,3 +39,29 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
+#read-more-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#read-more-btn {
+  background-color: #2a2a2a;
+  color: #fff;
+
+  /* top bottom, right left*/
+  padding-top: 10px;
+  padding-bottom: -5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-info {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
