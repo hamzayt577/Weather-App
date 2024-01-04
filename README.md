@@ -13,6 +13,5 @@ The Weather App is a simple web application that provides real-time weather info
 
 ## Future Updates
 
-- **Additional information** Display additional information if "More" button is clicked
 - **Search Cities** Input bar will be created where the user can input any city and the results are displayed in the UI
 - **Custom Weather Icons** Display custom weather icons for different types of weather conditions (eg: a raining cloud for rainy conditions)

@@ -14,9 +14,11 @@ const precipitation_el = document.getElementById("precipitation");
 
 let lat;
 let lng;
+let api_data; // Variable to store the API data
 
 function updateWeather(data) {
   console.log(data);
+  api_data = data; // Save the API data globally
 
   // displaying the weather info
   city_and_country_el.textContent = `${data.location.name}, ${data.location.country}`;
@@ -42,6 +44,29 @@ navigator.geolocation.getCurrentPosition((position) => {
   fetchWeather(lat, lng);
 });
 
-function read_more() {}
+function read_more() {
+  read_more_btn_el.style.display = "none";
+  read_more_container.style.display = "block";
+
+  const wind_direction =
+    api_data.current.wind_dir === "W"
+      ? "West"
+      : api_data.current.wind_dir === "S"
+      ? "South"
+      : api_data.current.wind_dir === "E"
+      ? "East"
+      : api_data.current.wind_dir === "N"
+      ? "North"
+      : "Unknown";
+
+  // displaying the 'read-more' data
+  // Format should be wind speed then direction (eg: 2km south)
+  wind_speed_direction_el.textContent = `Wind: ${api_data.current.wind_kph}km ${wind_direction}`;
+  precipitation_el.textContent = `${
+    api_data.current.precip_mm == 0
+      ? "Precipitation: None"
+      : api_data.current.precip_mm + "mm"
+  }`;
+}
 
 read_more_btn_el.addEventListener("click", read_more);
