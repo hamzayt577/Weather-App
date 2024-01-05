@@ -11,6 +11,9 @@ body {
 }
 
 #weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #2a2a2a;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
@@ -22,6 +25,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 #temperature {
@@ -48,14 +52,9 @@ body {
 #read-more-btn {
   background-color: #2a2a2a;
   color: #fff;
-
-  /* top bottom, right left*/
-  padding-top: 10px;
-  padding-bottom: -5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 15px;
   font-size: 24px;
-  border: none;
+  border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -64,4 +63,32 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
   padding: 5px;
+}
+
+#city-search {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#city-search::placeholder {
+  color: black;
+}
+
+#search-btn {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background-color: #555;
 }

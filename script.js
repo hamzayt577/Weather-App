@@ -12,6 +12,10 @@ const lowest_temp_el = document.getElementById("lowest-temp");
 const wind_speed_direction_el = document.getElementById("wind-speed-direction");
 const precipitation_el = document.getElementById("precipitation");
 
+const search_container = document.getElementById("search-container");
+const city_search_input = document.getElementById("city-search");
+const city_search_btn_el = document.getElementById("search-btn");
+
 let lat;
 let lng;
 let api_data; // Variable to store the API data
@@ -57,7 +61,7 @@ function read_more() {
       ? "East"
       : api_data.current.wind_dir === "N"
       ? "North"
-      : "Unknown";
+      : "";
 
   // displaying the 'read-more' data
   // Format should be wind speed then direction (eg: 2km south)
