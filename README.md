@@ -13,4 +13,4 @@ The Weather App is a simple web application that provides real-time weather info
 
 ## Future Updates
 
-- **Custom Weather Icons:** Display custom weather icons for different types of weather conditions (eg: a raining cloud for rainy conditions)
+- **No future updates for now :D**
