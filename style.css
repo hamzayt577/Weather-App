@@ -32,6 +32,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 30px;
+  display: inline;
 }
 
 #conditions {
@@ -91,4 +92,10 @@ body {
 
 #search-btn:hover {
   background-color: #555;
+}
+
+#weather-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: inline;
 }
